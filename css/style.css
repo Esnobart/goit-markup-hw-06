@@ -58,7 +58,7 @@ header {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 24px 0;
+    margin: 24px 0;
 }
 
 .text-add {
@@ -252,6 +252,7 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-top: 100px;
+    width: 110px;
 }
 
 .footer-studio {
@@ -269,3 +270,84 @@ header {
     margin-top: 16px;
 }
 
+.list.buttons {
+    gap: 24px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 96px;
+}
+
+.buttones {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #E7E9FC;
+    background-color: #F4F4FD;
+    cursor: pointer;
+    color: #4D5AE5;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+}
+
+.buttones:hover {
+    background: #404BBF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    color: #FFF;
+}
+
+.buttones:focus {
+    background: #404BBF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    color: #FFF;
+}
+
+.list.row {
+    flex-wrap: wrap;
+    column-count: 3;
+    column-gap: 24px;
+    row-gap: 48px;
+    margin-top: 72px;
+    margin-bottom: 120px;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--cornflower, #E7E9FC);
+    background: var(--white, #FFF);
+}
+
+.portfolioh {
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
+    color: #2E2F42;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.portfoliop {
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
+    color: #434455;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
