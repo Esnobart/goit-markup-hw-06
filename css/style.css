@@ -5,6 +5,8 @@ header {
 .container.header {
     display: flex;
     justify-content: space-between;
+    margin: 0 50px;
+    
 }
 
 .navigation {
@@ -31,13 +33,9 @@ img {
 
 .list.add {
     gap: 40px;
-    margin: 24px;
-    margin-left: 332px;
 }
 
 .webstudio {
-    margin-left: 156px;
-    margin-right: 76px;
     font-family: 'Raleway', sans-serif;
     color: #4d5ae5;
     font-size: 18px;
@@ -45,6 +43,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .studio {
@@ -344,9 +343,6 @@ img {
 }
 
 .portfolioh {
-    padding-top: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
     margin: 0;
     color: #2E2F42;
     font-family: 'Roboto', sans-serif;
@@ -357,9 +353,6 @@ img {
 }
 
 .portfoliop {
-    padding-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
     margin: 0;
     color: #434455;
     font-family: 'Roboto', sans-serif;
