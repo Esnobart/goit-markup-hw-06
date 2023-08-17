@@ -25,6 +25,10 @@ header {
     list-style: none;
 }
 
+img {
+    display: block;
+}
+
 .list.nav {
     gap: 40px;
 }
@@ -75,8 +79,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0, auto;
-    padding: 0, auto;
     height: 600px;
     background-color: #2e2f42;
 }
@@ -102,11 +104,12 @@ header {
 }
 
 .mainbutton {
-    display: inline-flex;
+    display: block;
     align-items: flex-start;
     padding: 16px 32px;
-    gap: 10px;
-    border-radius: 4px;
+    height: 56px;
+    min-width: 169px;
+    border: none;
     color: #FFF;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -120,6 +123,7 @@ header {
 }
 
 .selection.second {
+    padding: 120px 0;
     margin: 0;
 }
 
@@ -132,13 +136,13 @@ header {
 .list.first {
     display: flex;
     gap: 24px;
-    margin-top: 120px;
-    margin-left: 156px;
-    margin-right: 156px;
+    justify-content: center;
+    margin:  0;
+    padding: 0;
 }
 
 .text {
-    width: 264px;
+    width: calc((100% - 72px) / 4);
     margin: 0;
 }
 
@@ -178,10 +182,11 @@ header {
 }
 
 .selection.third {
+    padding-bottom: 120px;
     margin: 0;
 }
 
-.no {
+.noo {
     color: #2E2F42;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -191,20 +196,19 @@ header {
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    margin-top: 120px;
+    margin: 0;
     margin-bottom: 72px;
 }
 
 .list.photo {
-    margin-left: 156px;
-    margin-right: 156px;
-    margin-bottom: 120px;
+    justify-content: center;
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
 .selection.fourth {
+    padding: 120px 0;
     display: flex;
     background-color: #F4F4FD;
 }
