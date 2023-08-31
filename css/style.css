@@ -1,5 +1,6 @@
-header {
+.head {
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container.header {
@@ -52,12 +53,24 @@ img {
 
 .text-nav {
     font-family: 'Roboto', sans-serif;
-    color: #2E2F42;
+    color: #404bbf;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin: 24px 0;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-nav::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px; 
 }
 
 .text-add {
@@ -68,6 +81,7 @@ img {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .selection.first {
