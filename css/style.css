@@ -294,10 +294,13 @@ img {
     cursor: pointer;
 }
 
-.link.socialsvg:hover, .link.socialsvg:focus {
+.link.socialsvg:hover {
     background-color: #404bbf;
 }
 
+.link.socialsvg:focus {
+    background-color: #404BBF;
+}
 
 .icon {
     display: flex;
