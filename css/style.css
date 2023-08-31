@@ -132,6 +132,7 @@ img {
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0.64px;
+    background-color: #4D5AE5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
@@ -293,9 +294,10 @@ img {
     cursor: pointer;
 }
 
-.link.socialsvg:hover {
-    background-color: #31d0aa;
+.link.socialsvg:hover, .link.socialsvg:focus {
+    background-color: #404bbf;
 }
+
 
 .icon {
     display: flex;
