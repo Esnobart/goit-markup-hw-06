@@ -77,6 +77,9 @@ img {
     height: 600px;
     background-color: #2e2f42;
     padding: 188px 0;
+    background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(/images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container.second {
@@ -142,6 +145,16 @@ img {
     margin: 0;
 }
 
+.svgicon {
+    min-width: 264px;
+    min-height: 112px;
+    border-radius: 4px;
+    background: #F4F4FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .margin {
     color: #2E2F42;
     font-family: 'Roboto', sans-serif;
@@ -150,7 +163,6 @@ img {
     line-height: 24px;
     letter-spacing: 0.4px;
     margin: 0;
-    margin-bottom: 8px;
     width: 264px;
     text-align: center;
 }
@@ -238,18 +250,91 @@ img {
 
 .yes.team {
     text-align: center;
+    margin: 8px 0;
+}
+
+.container.svgcontainer {
+    display: flex;
+}
+
+.list.svglist {
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+}
+
+.link.socialsvg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    cursor: pointer;
+}
+
+.link.socialsvg:hover {
+    background-color: #31d0aa;
+}
+
+.icon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    fill: #f4f4fd;
+    
+}
+
+.navsvg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.list.svglink {
+    display: flex;
+}
+
+.selection.fifth {
+    padding: 120px 120px;
+}
+
+.list.customerssvg {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.custoners {
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    width: 168px;
+    height: 88px;
+    cursor: pointer;
 }
 
 .footer {
     margin: 0;
     background-color: #2E2F42;
-    height: 312px;
+    padding: 100px 0;
 }
 
 .container.sixth {
     display: flex;
-    flex-direction: column;
-    margin-left: 156px;
+    align-items: baseline;
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logotype {
+    margin-right: 120px;
 }
 
 .footer-webstudio {
@@ -260,7 +345,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-top: 100px;
     width: 110px;
 }
 
@@ -276,7 +360,32 @@ img {
     line-height: 24px;
     letter-spacing: 0.32px;
     width: 264px;
+    margin: 0;
     margin-top: 16px;
+}
+
+.socialtext {
+    color:  #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.list.footersvg {
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+}
+
+.icon-footer {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    fill: #f4f4fd;
 }
 
 .list.buttons {
