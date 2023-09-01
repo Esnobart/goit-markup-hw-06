@@ -283,12 +283,15 @@ img {
     padding: 0;
 }
 
+.teamlist {
+    width: 40px;
+    height: 40px;
+}
+
 .link.socialsvg {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
     background-color: #4d5ae5;
     cursor: pointer;
