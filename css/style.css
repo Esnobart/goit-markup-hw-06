@@ -455,8 +455,8 @@ img {
     height: 40px;
 }
 
-.link.socialsvg:hover,
-.link.socialsvg:focus {
+.link.foottersvg:hover,
+.link.foottersvg:focus {
     background-color: #31d0aa;
 }
 
