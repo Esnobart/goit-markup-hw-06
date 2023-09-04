@@ -3,13 +3,6 @@
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-@media only screen and (max-width: 767.98px) {
-    .head {
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
-}
-
 .container {
     min-width: 320px;
     max-width: 428px;
@@ -193,7 +186,7 @@ img {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -208,7 +201,7 @@ img {
 @media only screen and (min-width: 768px) {
     .text-add {
         font-size: 12px;
-        line-height: 27px;
+        line-height: 1.7;
         letter-spacing: 0.04em;
     }
 }
