@@ -192,7 +192,6 @@ img {
     color: #434455;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
@@ -201,20 +200,22 @@ img {
 
 @media only screen and (min-width: 1158px) {
     .text-add {
-        color: #434455;
-        line-height: 1.5;
+        line-height: 24px;
         letter-spacing: 0.02em;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
 @media only screen and (min-width: 768px) {
     .text-add {
-        color: #434455;
         font-size: 12px;
-        line-height: 1.7;
+        line-height: 27px;
         letter-spacing: 0.04em;
     }
+}
+
+.text-add:hover,
+.text-add:focus {
+    color: #404bbf;
 }
 
 .selection.first {
