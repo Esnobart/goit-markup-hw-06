@@ -400,6 +400,7 @@ img {
         flex-direction: row;
         flex-wrap: nowrap;
         display: flex;
+        padding: 0 15px;
     }
 }
 
@@ -456,7 +457,8 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 112px;
+        height: 100px;
+        width: 300px;
         margin-bottom: 8px;
     }
 }
