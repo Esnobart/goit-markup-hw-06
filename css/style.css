@@ -1093,6 +1093,12 @@ img {
     }
 }
 
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (min-width: 768px) {
     .column {
         flex-basis: calc((100% - 24px * 2) / 2);
@@ -1104,6 +1110,7 @@ img {
         flex-basis: calc((100% - 24px * 2) / 3);
     }
 }
+
 
 .portfolioa {
     display: block;
