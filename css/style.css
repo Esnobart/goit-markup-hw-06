@@ -795,12 +795,18 @@ img {
 
 .logotype {
     display: block;
-    margin-right: 120px;
+    margin-right: 72px;
 }
 
 @media only screen and (min-width: 768px) {
-    .footer-logo-wrapper {
+    .logotype {
         margin-right: 24px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .logotype {
+        margin-right: 120px;
     }
 }
 
