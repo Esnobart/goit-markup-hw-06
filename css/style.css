@@ -930,16 +930,10 @@ img {
             box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buttones:hover {
-    background: #404BBF;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    color: #FFF;
-    border: 1px solid transparent;
-}
-
+.buttones:hover,
 .buttones:focus {
     background: #404BBF;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: #FFF;
     border: 1px solid transparent;
 }
@@ -949,20 +943,49 @@ img {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    align-items: center;
-    justify-content: center;
 }
 
 .column {
-    border: 1px solid #E7E9FC;
-    width: calc((100% - 48px) / 3);
-    background: #FFF;
+    flex-basis: calc((100% - 24px * 2) / 3);
 }
 
-.container.colum {
+.portfolioa {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+.over {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-over {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0;
+}
+
+.portfolioa:hover .text-over,
+.portfolioa:focus .text-over {
+    transform: translateY(0%);
+}
+
+.colum {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    background: #ffffff;
 }
 
 .portfolioh {
@@ -984,39 +1007,6 @@ img {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
-}
-
-.portfolioa {
-    display: block;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    text-decoration: none;
-}
-
-
-.container.over {
-    position: relative;
-    overflow: hidden;
-}
-
-.portfolioa:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.portfolioa:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.portfolioa:hover .text-over {
-    transform: translateY(0%);
-}
-
-.portfolioa:focus .text-over {
-    transform: translateY(0%);
-}
-
-.over {
-    position: relative;
-    overflow: hidden;
 }
 
 .colum {
@@ -1122,22 +1112,6 @@ img {
 .svg-footer {
     fill: #fff;
     margin-left: 16px;
-}
-
-.text-over {
-    position: absolute;
-    top: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    padding: 40px 32px;
-    background-color: #4d5ae5;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin: 0;
 }
 
 .modal {
