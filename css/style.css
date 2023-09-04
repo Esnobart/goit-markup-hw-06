@@ -549,16 +549,6 @@ img {
     margin-bottom: 72px;
 }
 
-@media only screen and (min-width: 768px) {
-    .noo0 {
-        display: flex;
-        column-gap: 24px;
-        row-gap: 64px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
 .list.team {
     display: flex;
     align-items: center;
