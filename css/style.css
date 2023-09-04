@@ -549,14 +549,6 @@ img {
     margin-bottom: 72px;
 }
 
-.list.team {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    margin: 0;
-    padding: 0;
-}
-
 @media only screen and (min-width: 768px) {
     .list.team {
         display: flex;
