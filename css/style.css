@@ -24,6 +24,11 @@
 }
 
 .mnbo {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .mnbo {
     min-height: 22px;
     min-width: 32px;
     display: flex;
@@ -34,6 +39,7 @@
     border: none;
     border-radius: 50%;
     outline: none;
+    }
 }
 
 .container.header {
@@ -68,12 +74,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .address {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 1158px) {
     .address {
         display: flex;
         align-items: center;
@@ -437,8 +437,17 @@ img {
     }
 }
 
-.svgicon {
-    display: none;
+@media only screen and (min-width: 428px) {
+    .svgicon {
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: calc((100% - 48px) / 3);
+        height: 100px;
+        margin-bottom: 8px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -561,6 +570,15 @@ img {
 
 .list.photo {
     align-items: center;
+}
+
+@media only screen and (min-width: 428px) {
+    .list.photo {
+        flex-direction: column;
+        display: flex;
+        gap: 24px;
+
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -765,6 +783,12 @@ img {
     justify-content: center;
 }
 
+@media only screen and (min-width: 428px) {
+    .list.customerssvg {
+        row-gap: 24px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .list.customerssvg {
         column-gap: 24px;
@@ -841,6 +865,14 @@ img {
     align-items: center;
 }
 
+@media only screen and (min-width: 428px) {
+    .container.sixth {
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .container.sixth {
         align-items: baseline;
@@ -861,11 +893,17 @@ img {
     margin-right: 72px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 428px) {
     .logotype {
         margin: 0;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .logotype {
+        margin: 0;
     }
 }
 
@@ -884,6 +922,15 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-block;
+}
+
+@media only screen and (min-width: 428px) {
+    .footer-webstudio {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -908,7 +955,7 @@ img {
     margin-top: 16px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 428px) {
     .footer-text {
         display: flex;
         justify-content: center;
@@ -917,11 +964,12 @@ img {
     }
 }
 
-
-@media only screen and (max-width: 768) {
-    .socialcont {
+@media only screen and (min-width: 768px) {
+    .footer-text {
         display: flex;
-        margin-bottom: 72px;
+        justify-content: center;
+        text-align: center;
+        max-width: 264px;
     }
 }
 
@@ -940,6 +988,14 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin: 16px 0;
+}
+
+@media only screen and (min-width: 428px) {
+    .socialtext {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1108,6 +1164,14 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin: 16px 0;
+}
+
+@media only screen and (min-width: 428px) {
+    .text-sub {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 768px) {
