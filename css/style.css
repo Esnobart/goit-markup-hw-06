@@ -827,7 +827,7 @@ img {
 
 .input:focus {
     border-color: #4D5AE5;
-    fill: #4D5AE5;
+    
 }
 
 .svg-form {
@@ -839,6 +839,10 @@ img {
     margin: 0;
     padding: 0;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-form:focus {
+    fill: #4D5AE5;
 }
 
 .textarea {
@@ -892,9 +896,9 @@ img {
 }
 
 input:checked + label > span {
-    background-color: var(--color-button-nav);
+    background-color: #404bbf;
     border: none;
-    fill: var(--background-color-portfolio);
+    fill: #F4F4FD;
 }
 
 .link-label {
