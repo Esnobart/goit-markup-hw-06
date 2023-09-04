@@ -3,8 +3,16 @@
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+@media only screen and (max-width: 767.98px) {
+    .head {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
 .container {
-    width: 1158px;
+    min-width: 320px;
+    max-width: 428px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
@@ -19,8 +27,6 @@
 @media only screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
     }
 }
 
@@ -38,11 +44,11 @@
     }
 }
 
-.navigation,
-.address {
+.navigation {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    margin-right: auto;
+    justify-content: space-between;
 }
 
 @media only screen and (min-width: 768px) {
@@ -53,7 +59,7 @@
 }
 
 @media only screen and (min-width: 1158px) {
-    .adress {
+    .address {
         display: flex;
         align-items: center;
     }
@@ -113,14 +119,6 @@ img {
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .text-add {
-        color: var(--text-color);
-        font-size: 12px;
-        line-height: 1.7;
-        letter-spacing: 0.04em;
-    }
-}
 
 .webstudio {
     font-family: 'Raleway', sans-serif;
@@ -130,7 +128,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -145,14 +142,6 @@ img {
     }
 }
 
-@media only screen and (min-width: 1158px) {
-    .text-add {
-        color: var(--text-color);
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-}
 
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
     .contact:not(:last-child) {
@@ -208,6 +197,24 @@ img {
     line-height: 24px;
     letter-spacing: 0.32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 1158px) {
+    .text-add {
+        color: #434455;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .text-add {
+        color: #434455;
+        font-size: 12px;
+        line-height: 1.7;
+        letter-spacing: 0.04em;
+    }
 }
 
 .selection.first {
@@ -1488,4 +1495,18 @@ input:checked + label > span {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+}
+
+.mbhm {
+    min-height: 22px;
+    min-width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
 }
