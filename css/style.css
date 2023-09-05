@@ -371,21 +371,6 @@ img {
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .selection.second {
-        display: flex;
-        column-gap: 24px;
-        row-gap: 72px;
-        flex-wrap: wrap;
-    }
-}
-
-.container.third {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .list.first {
     display: flex;
     flex-direction: column;
@@ -458,8 +443,8 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100px;
-        width: 300px;
+        height: 112px;
+        width: 264px;
         margin-bottom: 8px;
     }
 }
@@ -487,7 +472,7 @@ img {
     .margin {
         font-size: 20px;
         font-weight: 500;
-        line-height: 1.2;
+        line-height: 24px;
     }
 }
 
@@ -507,10 +492,11 @@ img {
 .yes {
     color: #434455;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 24px;
     margin: 0;
+    letter-spacing: 0.32px;
 }
 
 @media only screen and (min-width: 1158px) {
@@ -588,11 +574,22 @@ img {
 }
 
 .selection.fourth {
-    padding: 120px 0;
     display: flex;
     margin: 0;
     justify-content: center;
     background-color: #F4F4FD;
+}
+
+@media only screen and (min-width: 320px) {
+    .selection.fourth {
+        padding: 96px 0;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .selection.fourth {
+        padding: 120px 0;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -622,16 +619,15 @@ img {
 @media only screen and (min-width: 320px) {
     .list.team {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        column-gap: 24px;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .list.team {
         display: flex;
-        column-gap: 24px;
         row-gap: 64px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -878,11 +874,13 @@ img {
 
 @media only screen and (min-width: 768px) {
     .container.sixth {
-        align-items: center;
+        align-items: baseline;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: left;
         padding: 0 108px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -898,14 +896,11 @@ img {
 
 .logotype {
     display: block;
-    margin-right: 72px;
 }
 
 @media only screen and (min-width: 320px) {
     .logotype {
-        margin: 0;
-        justify-content: center;
-        align-items: center;
+        margin-bottom: 72px;
     }
 }
 
@@ -918,6 +913,7 @@ img {
 @media only screen and (min-width: 1158px) {
     .logotype {
         margin-right: 120px;
+        margin-bottom: 0;
     }
 }
 
@@ -991,19 +987,14 @@ img {
 
 @media only screen and (min-width: 320px) {
     .socialcont {
-        margin-top: 72px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .socialcont {
-        margin: 0;
+        margin-bottom: 72px;
     }
 }
 
 @media only screen and (min-width: 1158px) {
     .socialcont {
         margin-right: 80px;
+        margin-bottom: 0;
     }
 }
 
@@ -1222,22 +1213,13 @@ img {
 }
 
 .sub-footer {
-    margin: 0;
-    margin-top: 72px;
+
 }
 
 @media only screen and (min-width: 1158px) {
     .sub-footer {
-        margin: 0;
-        margin-left: auto;
         display: flex;
         flex-direction: column;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1157.98hpx) {
-    .sub-footer {
-        margin-left: auto;
     }
 }
 
@@ -1360,7 +1342,7 @@ img {
 }
 
 .modal-window {
-    min-width: 392px;
+    min-width: 320px;
     min-height: 584px;
     border-radius: 4px;
     background: #fcfcfc;
@@ -1586,8 +1568,7 @@ input[type='checkbox']:checked+.textarea-label>.privpol {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 40px 35px 40px 40px;
-    padding-top: 80px;
+    padding: 80px 40px 40px 40px;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -1677,7 +1658,7 @@ input[type='checkbox']:checked+.textarea-label>.privpol {
 
 .list.mnsl {
     display: flex;
-    gap: 56px;
+    gap: 26px;
     align-items: center;
     margin-top: 48px;
 }
@@ -1702,7 +1683,7 @@ input[type='checkbox']:checked+.textarea-label>.privpol {
 .link.mncltel {
     font-family: 'Roboto', sans-serif;
     color: #4D5AE5;
-    font-size: 36px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
