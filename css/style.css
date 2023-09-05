@@ -873,6 +873,8 @@ img {
 
 @media only screen and (min-width: 1158px) {
     .container.sixth {
+        flex-direction: row;
+        flex-wrap: nowrap;
         max-width: 1158px;
     }
 }
@@ -1183,6 +1185,13 @@ img {
 
 .sub-footer {
     min-width: 100%;
+}
+
+@media only screen and (min-width: 1158px) {
+    .sub-footer {
+        margin-left: auto;
+        display: flex;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157.98hpx) {
@@ -1504,7 +1513,7 @@ input[type='checkbox']:checked + .textarea-label >.privpol {
     border-radius: 4px;
     outline: transparent;
     border: none;
-    background-color: var(--primary-interactive-color);
+    background-color: #4d5ae5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #ffffff;
     text-align: center;
@@ -1529,7 +1538,6 @@ input[type='checkbox']:checked + .textarea-label >.privpol {
     height: 100vh;
     padding: 40px 35px 40px 40px;
     padding-top: 80px;
-    background: var(--primary-white);
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 2px 1px 0px rgba(46, 47, 66, 0.08);
