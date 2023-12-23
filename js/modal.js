@@ -8,7 +8,10 @@
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
-  function toggleModal() {
+  function toggleModal(event) {
+    if (event.target.classList.contains('cart-btn-list')) {
+      return;
+    }
     refs.modal.classList.toggle("is-hidden");
   }
 })();
